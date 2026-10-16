@@ -1,0 +1,151 @@
+
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    margin: 0;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #14213d;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav h2 {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+}
+
+nav a:hover {
+    color: #fca311;
+}
+
+/* Home section */
+#home {
+    background-color: #14213d;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+/* Profile picture */
+#home img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fca311;
+    margin-bottom: 20px;
+}
+
+#home h1 {
+    color: white;
+    font-size: 32px;
+}
+
+#home p {
+    max-width: 600px;
+    margin: 20px auto;
+    line-height: 1.7;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    background-color: #fca311;
+    color: #14213d;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.button:hover {
+    background-color: white;
+}
+
+/* Other sections */
+section {
+    padding: 50px 8%;
+    text-align: center;
+}
+
+section h2 {
+    color: #14213d;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+section p {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* Skills and project cards */
+#skills,
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#skills h2,
+#projects h2 {
+    width: 100%;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    width: 280px;
+}
+
+/* Footer */
+footer {
+    background-color: #14213d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile phone layout */
+@media (max-width: 600px) {
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav h2 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    #home h1 {
+        font-size: 25px;
+    }
+
+    section {
+        padding: 35px 15px;
+    }
+}
